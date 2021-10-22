@@ -48,7 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       fontSize: 50,
                       color: Colors.black45,
                       fontWeight: FontWeight.w100,
-                    ));
+                    ),
+                  );
               },
             ),
           ),
@@ -62,12 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 print(appbox.get("a"));
                 print(appbox.get("b"));
                 print(appbox.get("c"));
-                Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) => NewScreen()),
-  );
+                Navigator.push(context,MaterialPageRoute(builder: (context) => NewScreen()));
               },
-              child: Text("Show"),
+              child:const Text("Show"),
               color: Colors.deepOrangeAccent,
             ),
           ),
